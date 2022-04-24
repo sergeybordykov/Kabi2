@@ -205,6 +205,7 @@
 
     &__content{
         max-width: 588px;
+        margin-right: 24px;
 
         &-subtitle{
             font-family: 'Poppins';
@@ -259,12 +260,11 @@
         margin-top: 64px;
         display: flex;
         align-items: center;
-        column-gap: 32px;
     }
 
-/*     &__content-box+.about__content-box{
+    &__content-box+.about__content-box{
         margin-left: 32px;
-    } */
+    }
 
     &__content-box{
         max-width: 264px;
@@ -308,8 +308,10 @@
 
     &__images{
         position: relative;
+        max-width: 504px;
 
         &-img{
+            max-width: 100%;
             padding: 0 75px 0 99px;
         }
 
@@ -451,6 +453,18 @@
         flex-direction: row-reverse;
     }
 
+    &:nth-child(odd){
+        .content-card__content{
+            margin-left: 24px;
+        }
+    }
+
+    &:nth-child(even){
+        .content-card__content{
+            margin-right: 24px;
+        }
+    }
+
     &__content{
         width: 600px;
 
@@ -505,13 +519,13 @@
     
     &-wrap{
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
         align-items: center; 
     }
 
     &__content{
-        margin-right: 8px;
-        width: 404px;
+        margin-left: 55px;
+        max-width: 404px;
     }
 
     &__subtitle{
@@ -575,7 +589,7 @@
 
     &__content{
         max-width: 392px;
-        margin-right: 8px; 
+        margin-right: 24px; 
     }
 
     &__title{
@@ -698,28 +712,30 @@
         padding-left: 24px;
     }
 
-    .content-card{
-        column-gap: 24px;
-    }
+
 
     .content-card__content{
-        min-width: 450px;
+        min-width: 550px;
         
     }
 
-    .about__wrape{
-        column-gap: 24px;  
-    }
 
-    .cta-wrap{
-        column-gap: 24px;  
-    }
-
-    .faq__wrap{
-        column-gap: 24px;
+    .cta__content{
+        margin-left: 0;
+        margin-right: 24px;
     }
 
 
+}
+
+@media(max-width:1140px){
+    .about__images-elipse{
+        display: none;
+    }
+
+    .about__images-img{
+        padding: 24px;
+    }
 
 }
 
