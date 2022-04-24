@@ -1,0 +1,24 @@
+.sobre__header_gray1{
+    background-color: $gray1;
+}
+
+.main-sobre{
+    padding-top: 104px;
+}
+
+.sobre-hero{
+    background-image:url(../img/BG-hero-about-export.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 664px;
+
+    &__title{
+        @include Heading56;
+        color: $white;
+    }
+
+    &__text{
+        @include Body20;
+    }
+}
