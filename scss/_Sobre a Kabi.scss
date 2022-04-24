@@ -13,12 +13,23 @@
     background-repeat: no-repeat;
     min-height: 664px;
 
+    &__wrap{
+        padding: 126px 0;
+        width:808px;
+    }
+
     &__title{
         @include Heading56;
         color: $white;
     }
 
     &__text{
+        margin-top: 24px;
         @include Body20;
+        color: $orange-lightest;
+    }
+
+    &__button{
+        margin-top: 48px;
     }
 }
