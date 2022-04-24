@@ -33,3 +33,64 @@
         margin-top: 48px;
     }
 }
+
+.sobre-about{
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 94px 0 88px 0;
+    }
+
+    &__content{
+        width: 600px;
+        margin-right: 24px;
+    }
+
+    &__subtitle{
+        @include Overline14;
+        color: $orange;
+
+    }
+
+    &__title{
+        margin-top: 8px;
+        @include Heading40;
+        color:$gray1;
+    }
+
+    &__text{
+        margin-top: 16px;
+        @include Body18;
+        color:$gray2;
+    }
+
+    &__images{
+        display: grid;
+        margin-right: -41px;
+    }
+
+    &__img{
+        width: 100%;
+        max-height: 419px;
+    }
+
+    &__elipse_one{
+        margin-left: -79px;
+        grid-column: 2 / 2;
+        margin-bottom: 19px;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        background-color: $orange-light;
+    }
+
+    &__elipse_two{
+        grid-column: 1 / 2;
+        margin-top: 11px;
+        width: 35px;
+        height: 35px;
+        border-radius: 100%;
+        background-color: $orange;
+    }
+}
