@@ -743,31 +743,22 @@
         margin-right: 24px;
     }
 
+
     .commitment{
         &__images{
-            width: calc(100% - 550px - 24px);
+            margin-left: -20px;
+            
         }
 
         &__content{
-            margin-left: 24px;
-            padding-right: 20px;
-            width: 550px;
+            max-width: 600px;
         }
     }
+    
 
 
 }
 
-/* @media(max-width:1140px){
-    .about__images-elipse{
-        display: none;
-    }
-
-    .about__images-img{
-        padding: 24px;
-    }
-
-} */
 
 @media(max-width:1024px){
     .header .navbar{
