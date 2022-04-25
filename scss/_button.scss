@@ -1,16 +1,54 @@
-.button-down{
-    display: flex;
-    align-items: center;
-    background: none;
-    @include Button16;
-    color:$white;
-    &__line{
-        margin-right: 13px;
+.button{
+    &-down{
+        padding-top: 14px;
+        padding-bottom: 14px;
+        padding-left: 32px;
+        padding-right: 32px;
+        display: flex;
+        align-items: center;
+        background: none;
+        color:$white;
+
+        &__line{
+            margin-right: 13px;
+        }
+
+        &__text{
+            @include Button16;
+            color:$white;
+        }
     }
 
-    &__text{
-        @include Button16;
-        color:$white;
+    &-orange{
+        background-color:$orange;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        padding-left: 32px;
+        padding-right: 32px;
+        border-radius: 8px;
+
+        &__text{
+            @include Button16;
+            color:$white;
+        }
+    }
+
+    &-left{
+        padding-top: 14px;
+        padding-bottom: 14px;
+        padding-left: 32px;
+        padding-right: 32px;
+        display: flex;
+        align-items: center;
+        background: none;
+        &__line{
+            margin-left: 13px;
+        }
+
+        &__text{
+            @include Button16;
+            color:$orange;
+        }
     }
 
 }
