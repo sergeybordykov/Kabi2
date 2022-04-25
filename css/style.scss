@@ -15,8 +15,9 @@
 }
 
 .container{
+    width: 100%;
     margin: 0 auto;
-    width: 1264px;
+    max-width: 1264px;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -316,33 +317,33 @@
 
     &__images{
         position: relative;
-        max-width: 504px;
+        padding-left: 99px;
+        padding-right: 75px;
+    }
 
-        &-img{
-            max-width: 100%;
-            padding: 0 75px 0 99px;
-        }
+    &__img{
+        width: 100%;
+        max-height: 700px;
+    }
 
-        &-elipse{
-            position: absolute;
-            width: 15px;
-            height: 15px;
-            border-radius: 50%;
-            background: #FFD89F;
+    &__elipse-one{
+        position: absolute;
+        bottom: 381px;
+        left: 0;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        background-color: $orange-light;
+    }
 
-            &_one{
-                margin-top: 304px; 
-            }
-    
-            &_two{
-                margin-top: 607px;
-                right: 0;
-                width: 35px;
-                height: 35px;
-                border-radius: 50%;
-                background: #FEAB21;
-            }
-        }
+    &__elipse-two{
+        position: absolute;
+        bottom: 58px;
+        right: 0;
+        width: 35px;
+        height: 35px;
+        border-radius: 100%;
+        background-color: $orange;
     }
     
 
@@ -703,6 +704,15 @@
             margin: 0 0;
         }
     }
+
+    .sobre-about{
+        &__images{
+            margin-right:0;
+        }
+
+    }
+
+
     
 }
 
@@ -736,7 +746,7 @@
 
 }
 
-@media(max-width:1140px){
+/* @media(max-width:1140px){
     .about__images-elipse{
         display: none;
     }
@@ -745,7 +755,7 @@
         padding: 24px;
     }
 
-}
+} */
 
 @media(max-width:1024px){
     .header .navbar{

@@ -35,6 +35,7 @@
 }
 
 .sobre-about{
+    
     &__wrap{
         display: flex;
         justify-content: space-between;
@@ -66,7 +67,9 @@
     }
 
     &__images{
-        display: grid;
+        position: relative;
+        padding-top: 34px;
+        padding-bottom: 46px;
         margin-right: -41px;
     }
 
@@ -75,19 +78,20 @@
         max-height: 419px;
     }
 
-    &__elipse_one{
-        margin-left: -79px;
-        grid-column: 2 / 2;
-        margin-bottom: 19px;
+    &__elipse-one{
+        position: absolute;
+        top: 0;
+        right: 79px;
         width: 15px;
         height: 15px;
         border-radius: 100%;
         background-color: $orange-light;
     }
 
-    &__elipse_two{
-        grid-column: 1 / 2;
-        margin-top: 11px;
+    &__elipse-two{
+        position: absolute;
+        bottom: 0;
+        left: 0;
         width: 35px;
         height: 35px;
         border-radius: 100%;
