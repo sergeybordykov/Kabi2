@@ -743,6 +743,18 @@
         margin-right: 24px;
     }
 
+    .commitment{
+        &__images{
+            width: calc(100% - 550px - 24px);
+        }
+
+        &__content{
+            margin-left: 24px;
+            padding-right: 20px;
+            width: 550px;
+        }
+    }
+
 
 }
 

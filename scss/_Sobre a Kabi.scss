@@ -98,3 +98,71 @@
         background-color: $orange;
     }
 }
+
+.commitment{
+    min-height: 1092px;
+
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+	    padding-right: calc((100% - 1224px) / 2);
+    }
+
+    &__images{
+        width: calc(100% - 620px - 104px);
+    }
+
+    &__img{
+        width: 100%;
+    }
+
+    &__content{
+        margin-left: 104px;
+        padding-right: 20px;
+        width: 620px;
+    }
+
+    &__overline{
+        @include Overline14;
+        color:$orange;
+    }
+
+    &__title{
+        margin-top: 8px;
+        @include Heading40;
+        color:$gray1;
+    }
+
+    &__text{
+        margin-top: 16px;
+        @include Body18;
+        color:$gray2;
+    }
+
+    &__principios-title{
+        margin-top: 64px;
+        @include Heading32;
+        color:$gray1;
+    }
+
+    &__principios-subtitle{
+        margin-top: 24px;
+        @include Heading16;
+        color:$gray1;
+    }
+
+    &__principios-line{
+        margin-top: 8px;
+        width: 48px;
+        height: 4px;
+        color:$orange;
+    }
+
+    &__principios-text{
+        margin-top: 14px;
+        @include Body18;
+        color:$gray2;
+    }
+}
+
