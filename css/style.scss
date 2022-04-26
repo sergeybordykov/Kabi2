@@ -49,12 +49,13 @@
     }
 }
 
-.heading32{
+
+
+.heading56{
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
-    line-height: 42px;
-    color: #070E25;
+    font-size: 56px;
+    line-height: 72px;
 }
 
 .heading40{
@@ -62,7 +63,27 @@
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
-    color: #070E25;
+}
+
+.heading32{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+}
+
+.heading16{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.body20{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
 }
 
 .body18{
@@ -70,7 +91,6 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
-    color: #4C4B63;
 }
 
 .body16{
@@ -78,7 +98,27 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
-    color: #4C4B63;
+}
+
+.body14{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.button16{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.button14{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
 }
 
 .overline14{
@@ -88,7 +128,6 @@
     line-height: 24px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #FEAB21;
 }
 
 
@@ -103,7 +142,7 @@
     padding: 32px 0;
     z-index: 1;
 
-    &__wrape{
+    &__wrap{
     justify-content: space-between;  
     display: flex;
     align-items: center;
@@ -116,31 +155,32 @@
     }
 
     &__logo{
-        padding-right: 40px;
+        margin-right: 40px;
     }
 
-    &__btn{
-        .header__btn-item+.header__btn-item{
-            margin-left: 6px;
-        }
-
+    &__box-button{
+        display: flex;
     }
+
+    .header__button + .header__button{
+        margin-left: 8px;
+    }
+
 }
+
 
 .navbar{
 
-    .navbar__link+.navbar__link{
+    .navbar__item+.navbar__item{
         padding-left: 45px;
     }
 
-    &__link{
+    &__item{
         display: inline;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 24px;
-        & a{
-            color: rgba(255, 255, 255, 0.72);
-        }
+    }
+
+    &__link{
+        color: rgba(255, 255, 255, 0.72);
     }
 }
 
@@ -658,39 +698,21 @@
         padding-top: 56px;
     }
 
-    &-navbar__link{
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 28px;
-
-        a{
-            color: #FFE7C7;
-        }
-    }
-
     &__network{
         margin-top: 32px;
 
         a+a{
-            margin-left: 48px;
+            margin-left: 45px;
         }
     }
 
     &__signature{
         margin-top: 32px;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 28px;
-
-        a{
-            color: #FFD89F; 
-        }
+        color: #FFD89F;    
     }
 
     &__renove{
-        margin-top: 78px;
+        margin-top: 73px;
         margin-bottom: 16px;
     }
     
