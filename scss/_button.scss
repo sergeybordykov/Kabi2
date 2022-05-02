@@ -154,6 +154,18 @@
         &__img{
             margin-left: 9px;
         }
+
+        &-big{
+            display: flex;
+            align-items: center;
+    
+            &__text{
+                color:$orange;
+            }
+            &__img{
+                margin-left: 13px;
+            } 
+        }
     }
 
 }
