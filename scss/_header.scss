@@ -1,0 +1,55 @@
+.header{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    padding: 32px 0;
+    z-index: 1;
+
+    &__wrap{
+    justify-content: space-between;  
+    display: flex;
+    align-items: center;
+    }
+
+    &__container{
+        display: flex;
+        align-items: center; 
+        justify-content: space-between;
+    }
+
+    &__logo{
+        margin-right: 40px;
+    }
+
+    &__box-button{
+        display: flex;
+    }
+
+    .header__button + .header__button{
+        margin-left: 8px;
+    }
+
+}
+
+
+.navbar{
+
+    .navbar__item+.navbar__item{
+        padding-left: 45px;
+    }
+
+    &__item{
+        display: inline;
+    }
+
+    &__link{
+        color: rgba(255, 255, 255, 0.72);
+
+        &:hover{
+        color:rgb(255, 255, 255);
+        }
+    }
+}

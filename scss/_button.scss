@@ -1,12 +1,14 @@
 .button{
     &-down{
-        padding-top: 14px;
-        padding-bottom: 14px;
-        padding-left: 32px;
-        padding-right: 32px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 30px;
+        padding-right: 30px;
         display: flex;
         align-items: center;
         background: none;
+        border-radius: 8px;
+        border: 2px solid transparent;
         color:$white;
 
         &__line{
@@ -14,9 +16,23 @@
         }
 
         &__text{
-            @include Button16;
             color:$white;
+
+            &_orange{
+                color:$orange;
+            }
         }
+
+        &:hover{
+            background-color:$orange-lightest;
+        }
+
+        &:active{
+            background-color:$orange-lightest;
+            border-color: $orange;
+            
+        }
+
     }
 
     &-orange{
@@ -26,11 +42,16 @@
         padding-left: 32px;
         padding-right: 32px;
         border-radius: 8px;
+        color:$white;
 
-        &__text{
-            @include Button16;
-            color:$white;
+        &:hover{
+            background-color:$orange-dark;
         }
+
+        &:active{
+            background-color:$orange-darkest;
+        }
+        
     }
 
     &-left{
@@ -46,22 +67,33 @@
         }
 
         &__text{
-            @include Button16;
             color:$orange;
         }
     }
 
     &-height{
-        padding-top: 8px;
-        padding-bottom: 8px;
-        padding-left: 24px;
-        padding-right: 24px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-left: 22px;
+        padding-right: 22px;
         display: flex;
         align-items: center;
         background: none;
+        border-radius: 8px;
+        border: 2px solid transparent;
         color:$orange;
 
-        &--orange{
+        &:hover{
+            background-color:$orange-lightest;
+        }
+
+        &:active{
+            background-color:$orange-lightest;
+            border-color: $orange;
+            
+        }
+
+        &_orange{
             color:$white;
             background-color:$orange;
             padding-top: 8px;
@@ -71,6 +103,14 @@
             display: flex;
             align-items: center;
             border-radius: 8px;
+
+            &:hover{
+                background-color:$orange-dark;
+            }
+    
+            &:active{
+                background-color:$orange-darkest;
+            }
         }
     }
 

@@ -1,13 +1,9 @@
 @import url(reset.css);
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import "../scss/vars";
-@import "../scss/mixin";
-@import "../scss/button";
-@import "../scss/Sobre\ a\ Kabi";
 
 *{
     font-family: 'Poppins', sans-serif;
+    transition: .2s linear;
 }
 
 .main{
@@ -22,226 +18,13 @@
     padding-right: 20px;
 }
 
-.btn{
-    padding: 8px 24px;
-    background: #FEAB21;
-    border-radius: 6px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height:  24px;
-    a{
-        color: #FFFFFF;
-    }
-}
 
-.btn-lite{
-    padding: 8px 24px;
-    background: none;
-    border-radius: 6px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    a{
-        color: #FEAB21;
-    }
-}
-
-
-
-.heading56{
-    font-style: normal;
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 72px;
-}
-
-.heading40{
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
-}
-
-.heading32{
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 42px;
-}
-
-.heading16{
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 22px;
-}
-
-.body20{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 32px;
-}
-
-.body18{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
-}
-
-.body16{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 28px;
-}
-
-.body14{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 26px;
-}
-
-.button16{
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 28px;
-}
-
-.button14{
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 24px;
-}
-
-.overline14{
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-
-
-.header{
-    position: absolute;
-    margin: auto;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    padding: 32px 0;
-    z-index: 1;
-
-    &__wrap{
-    justify-content: space-between;  
-    display: flex;
-    align-items: center;
-    }
-
-    &__container{
-        display: flex;
-        align-items: center; 
-        justify-content: space-between;
-    }
-
-    &__logo{
-        margin-right: 40px;
-    }
-
-    &__box-button{
-        display: flex;
-    }
-
-    .header__button + .header__button{
-        margin-left: 8px;
-    }
-
-}
-
-
-.navbar{
-
-    .navbar__item+.navbar__item{
-        padding-left: 45px;
-    }
-
-    &__item{
-        display: inline;
-    }
-
-    &__link{
-        color: rgba(255, 255, 255, 0.72);
-    }
-}
-
-.hero{
-    height: 100vh;
-    background: url(../img/BG-hero-export.svg) no-repeat center;
-    background-size: cover;
-
-
-    &__wrape{
-        height: 100vh;
-        padding-top: 104px;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
-
-    &__item{
-
-        margin-right: 34px;
-
-        &-title{
-            margin-left: 7px;
-            font-style: normal;
-            font-weight: 700;
-            font-size: 56px;
-            line-height: 72px;
-            color: #FFFFFF;
-            padding-bottom: 24px;
-        }
-
-        &-text{
-            margin-left: 7px;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 32px;
-            color: rgba(255, 255, 255, 0.72);
-            padding-bottom: 48px;
-        }
-        
-    }
-    
-
-    &__btn-item{
-        padding: 12px 32px;
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 28px;
-    }
-
-    
-    &__btn-img{
-        margin-right: 5px;
-        margin-top: 3px;
-        padding: 0 5px;
-    }
-
-}
+@import "../scss/vars";
+@import "../scss/title";
+@import "../scss/button";
+@import "../scss/header";
+@import "../scss/home/hero";
+@import "../scss/Sobre\ a\ Kabi";
 
 .about{
 
@@ -784,6 +567,11 @@
 
 @media(max-width:1024px){
     .header .navbar{
+        display: none;
+    }
+
+    .about__elipse-one,
+    .about__elipse-two{
         display: none;
     }
 }

@@ -19,13 +19,11 @@
     }
 
     &__title{
-        @include Heading56;
         color: $white;
     }
 
     &__text{
         margin-top: 24px;
-        @include Body20;
         color: $orange-lightest;
     }
 
@@ -50,20 +48,17 @@
     }
 
     &__subtitle{
-        @include Overline14;
         color: $orange;
 
     }
 
     &__title{
         margin-top: 8px;
-        @include Heading40;
         color:$gray1;
     }
 
     &__text{
         margin-top: 16px;
-        @include Body18;
         color:$gray2;
     }
 
@@ -126,31 +121,26 @@
     }
 
     &__overline{
-        @include Overline14;
         color:$orange;
     }
 
     &__title{
         margin-top: 8px;
-        @include Heading40;
         color:$gray1;
     }
 
     &__text{
         margin-top: 16px;
-        @include Body18;
         color:$gray2;
     }
 
     &__principios-title{
         margin-top: 64px;
-        @include Heading32;
         color:$gray1;
     }
 
     &__principios-subtitle{
         margin-top: 24px;
-        @include Heading16;
         color:$gray1;
     }
 
@@ -163,7 +153,6 @@
 
     &__principios-text{
         margin-top: 14px;
-        @include Body18;
         color:$gray2;
     }
 }
@@ -179,13 +168,11 @@
     }
 
     &__title{
-        @include Heading40;
         color:$gray1;
     }
 
     &__text{
         margin-top: 20px;
-        @include Body18;
         color:$gray2;
     }
 
