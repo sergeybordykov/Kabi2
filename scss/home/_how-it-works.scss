@@ -1,0 +1,75 @@
+.how-it-works{
+    padding: 128px 0;
+    background-image:url(../img/BG-how-it-works.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+
+    &__container{
+        width: 100%;
+    }
+
+    &__overline{
+        color: #FFFFFF;
+    }
+
+    &__title{
+        max-width: 624px;
+        margin-top: 8px;
+        color: #FFFFFF;
+    }
+}
+
+.grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(288px,1fr));
+    gap: 24px;
+    grid-row-gap: 24px;
+
+
+
+    .grid-container{
+        position: relative;
+        background: linear-gradient(143.21deg, #FFFFFF 6.24%, #FFECC6 148.73%);
+        box-shadow: 0px 10.2404px 40.9615px -10.2404px rgba(134, 58, 17, 0.3);
+        border-radius: 12px;
+        padding: 56px 32px;
+
+        &__icon{
+            margin-top: 16px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        &__number{
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 128px;
+            line-height: 128px;
+            color: #FFE7C7;
+        } 
+
+        &__title{
+            margin-top: 25px;
+            color: $gray1;
+        }
+
+        &__text{
+            margin-top: 15px;
+            max-width: 224px;
+            color: $gray2;
+        }
+
+        &__icon-img{
+            width: 32px;
+            height: 32px;
+        }
+    }
+}
