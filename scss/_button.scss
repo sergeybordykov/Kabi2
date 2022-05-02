@@ -69,6 +69,35 @@
         &__text{
             color:$orange;
         }
+
+        &-orange{
+            padding-top: 14px;
+            padding-bottom: 14px;
+            padding-left: 32px;
+            padding-right: 32px;
+            display: flex;
+            align-items: center;
+            border-radius: 8px;
+            background-color:$orange;
+
+            &__line{
+                margin-left: 13px;
+            }
+    
+            &__text{
+                color:$white;
+            }
+
+            &:hover{
+                background-color:$orange-dark;
+            }
+    
+            &:active{
+                background-color:$orange-darkest;
+            }
+        }
+
+
     }
 
     &-height{
@@ -111,6 +140,19 @@
             &:active{
                 background-color:$orange-darkest;
             }
+        }
+    }
+
+    &-card{
+        display: flex;
+        align-items: center;
+
+        &__text{
+            color:$orange;
+        }
+
+        &__img{
+            margin-left: 9px;
         }
     }
 
