@@ -1,0 +1,39 @@
+.cta{
+    margin-top: 127px;
+    
+    &-wrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+    }
+
+    &__content{
+        margin-left: 55px;
+        max-width: 404px;
+    }
+
+
+    &__title{
+        margin-top: 8px;
+        color: $gray1;
+    }
+
+    &__text{
+        margin-top: 16px;
+        color: $gray2;
+    }
+
+    &__button{
+        margin-top: 32px;
+    }
+
+
+    &__images{
+        margin: -52px -62px 0 0;
+        width: 819px;
+        
+        &-img{
+            max-width: 100%;
+        }
+    }
+}

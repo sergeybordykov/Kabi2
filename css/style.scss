@@ -27,72 +27,10 @@
 @import "../scss/home/about";
 @import "../scss/home/how-it-works";
 @import "../scss/home/features";
+@import "../scss/home/cta";
 @import "../scss/Sobre\ a\ Kabi";
 
-.cta{
-    margin-top: 129px;
-    
-    &-wrap{
-        display: flex;
-        justify-content: space-between;
-        align-items: center; 
-    }
 
-    &__content{
-        margin-left: 55px;
-        max-width: 404px;
-    }
-
-    &__subtitle{
-        font-style: normal;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 24px;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        color: #FEAB21;
-    }
-
-    &__title{
-        margin-top: 8px;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 32px;
-        line-height: 42px;
-        color: #121127;
-    }
-
-    &__text{
-        margin-top: 16px;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 28px;
-        color: #4C4B63;
-    }
-
-    &__btn-item{
-        margin-top: 32px;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 28px;
-        padding: 14px 32px;
-    }
-
-    &__btn-img{
-        margin-left: 8px;
-    }
-
-    &__images{
-        margin: -52px -62px 0 0;
-        width: 819px;
-        
-        &-img{
-            max-width: 100%;
-        }
-    }
-}
 
 .faq{
 
