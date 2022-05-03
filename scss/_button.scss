@@ -35,6 +35,21 @@
 
     }
 
+    &-white{
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        &__img{
+            margin-right: 13px;
+            margin-left: 5px;
+        }
+
+        &__text{
+            color:$white;
+        }
+
+    }
+
     &-orange{
         background-color:$orange;
         padding-top: 14px;
@@ -144,6 +159,7 @@
     }
 
     &-card{
+        background-color: transparent;
         display: flex;
         align-items: center;
 

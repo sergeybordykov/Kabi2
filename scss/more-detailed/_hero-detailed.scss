@@ -1,0 +1,34 @@
+.more-detailed__header_gray1{
+    background-color: $gray1;
+}
+
+.main-more-detailed{
+    padding-top: 104px;
+}
+
+.detailed-hero{
+    background-image:url(../img/bg-more-detailed.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 664px;
+
+    &__wrap{
+        padding: 126px 0;
+        width:808px;
+    }
+
+    &__title{
+        color: $white;
+    }
+
+    &__text{
+        margin-top: 24px;
+        color: $orange-lightest;
+    }
+
+    &__button{
+        margin-top: 48px;
+    }
+
+}

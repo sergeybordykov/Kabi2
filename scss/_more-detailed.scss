@@ -1,38 +1,3 @@
-.sobre__header_gray1{
-    background-color: $gray1;
-}
-
-.main-sobre{
-    padding-top: 104px;
-}
-
-.sobre-hero{
-    background-image:url(../img/BG-hero-about-export.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 664px;
-
-    &__wrap{
-        padding: 126px 0;
-        width:808px;
-    }
-
-    &__title{
-        color: $white;
-    }
-
-    &__text{
-        margin-top: 24px;
-        color: $orange-lightest;
-    }
-
-    &__button{
-        padding: 0 0;
-        margin-top: 48px;
-    }
-}
-
 .sobre-about{
     
     &__wrap{
