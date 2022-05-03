@@ -28,69 +28,9 @@
 @import "../scss/home/how-it-works";
 @import "../scss/home/features";
 @import "../scss/home/cta";
+@import "../scss/home/faq";
 @import "../scss/Sobre\ a\ Kabi";
 
-
-
-.faq{
-
-    &__wrap{
-        padding: 128px 0;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    &__content{
-        max-width: 392px;
-        margin-right: 24px; 
-    }
-
-    &__title{
-        font-style: normal;
-        font-weight: 700;
-        font-size: 40px;
-        line-height: 52px;
-        color: #121127;
-    }
-
-    &__text{
-        margin-top: 24px;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 28px;
-        color: #4C4B63;
-
-        &-link{
-            color: #4E8AF4;
-        }
-    }
-
-    &__list{
-        max-width: 744px;
-
-        &-title{
-            font-style: normal;
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 22px;
-            color: #121127;
-        }
-
-        &-text{
-            margin-top: 16px;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 26px;
-            color: #4C4B63;
-        }
-
-        &-item+.faq__list-item{
-            margin-top: 40px;
-        }
-    }
-}
 
 .footer{
     background: linear-gradient(90.84deg, #FFAB1A 0.72%, #E36307 99.37%);

@@ -1,0 +1,47 @@
+.faq{
+
+    &__wrap{
+        padding: 130px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__content{
+        max-width: 392px;
+        margin-right: 24px; 
+    }
+
+    &__title{
+        color: $gray1;
+        margin-bottom: 24px;
+    }
+
+    &__text{
+        color: $gray2;
+        &-link{
+            color: #4E8AF4;
+        }
+
+        &:not(:last-child){
+            margin-bottom: 28px;
+        }
+
+    }
+
+    &__list{
+        max-width: 744px;
+
+        &-title{
+            color: $gray1
+        }
+
+        &-text{
+            margin-top: 16px;
+            color: $gray2;
+        }
+
+        &-item:not(:last-child){
+            margin-bottom: 40px;
+        }
+    }
+}
